@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<h1 style="color: rgb(176, 180, 0); padding: 3% 0;"><strong>게시글 입력하기</strong></h1>
+
+<div class="form-group row">
+    <label for="example-text-input" class="col-2 col-form-label"></label>
+    <div class="col-10">
+        <form action="/posts/create" method="post">
+            <p>제목: <input class="form-control" id="example-text-input" type="text" placeholder="제목을 입력하세요" name="title" style="width:80%;"></p>
+            <p>내용: <input class="form-control" id="example-text-input" type="text" placeholder="내용을 입력하세요" name="content" style="width:80%;"></p>
+            <input class="btn btn-outline-success" type="submit" value="제출" style="margin: 0 35%; width: 10%;">
+        </form>
+    </div>
+</div>
+
+<footer>
+    <h4>LIKELION</h4>
+    <h5>UNILION Homework#4</h5>
+</footer>
+

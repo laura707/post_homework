@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.show_h2 {
+    clear: both; 
+    text-align: center;
+}
+
+.index {
+   margin: 50px 0; 
+}
+
+h3 {
+    float: left;
+    margin-left: 15%;
+}
+
+.write {
+    float: right;
+    margin-right: 15%;
+    font-size: 20px;
+}
+
+h5, table, h4{
+    clear: both;
+    text-align: center;
+}
+
+footer {
+    padding: 15px;
+    margin-top: 100px;
+    background-color: rgb(176, 200, 0);
+    width: 100%;
+    color: white;
+}
+
+td {
+  text-align: center;
+}
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<h1 style="color: rgb(176, 180, 0); padding: 3% 0;"><strong>도란도란 게시판</strong></h1>
+<hr />
+
+<div class="index">
+    <h3><strong>게시글 목록</strong></h3>
+    
+    <p class="btn btn-outline-info write"><a href="/posts/new">게시글 작성하기</a></p>
+    
+    <table class="table table-striped">
+        <tr>
+            <th style="text-align: center;">게시글 번호</th>
+            <th style="text-align: center;">게시글 제목</th>
+        </tr>
+        
+        <% @post.each do |post| %>
+        <tr>
+            <td scope="row">
+            <a href="/posts/show/<%=post.id%>"><%=post.id%></a></td>
+            <td><%=post.title%></td>
+        </tr>
+        <%end%>
+    </table>
+</div>
+
+<footer>
+    <h4>LIKELION</h4>
+    <h5>UNILION Homework#4</h5>
+</footer>
